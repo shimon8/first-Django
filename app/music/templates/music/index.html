@@ -1,0 +1,12 @@
+{% if albums %}
+    <ul>
+        {%for album in albums%}
+        <li>
+            <a href="{{album.id}}">{{album.title}}</a>
+        </li>
+        {%endfor%}
+    </ul>
+
+{% else %}
+    <h2>Error</h2>
+{%endif%}
